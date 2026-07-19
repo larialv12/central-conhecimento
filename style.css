@@ -226,7 +226,7 @@ body {
 
     .card {
         width: 340px;
-		flex:none;
+		flex:auto;
     }
 }
 
