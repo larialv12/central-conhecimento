@@ -293,6 +293,7 @@ body {
 
     .card p {
         font-size: 18px;
+		width: 100%;
     }
 }
 
