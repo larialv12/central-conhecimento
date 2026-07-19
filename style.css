@@ -1,0 +1,296 @@
+:root {
+	--cor-principal-fundo: #FEFEFE;
+	--fonte-principal: "Inter", sans-serif;
+	--fonte-primaria: #000000;
+	--fonte-terciaria: #5274FF;
+	--fonte-quartenaria: #E9EDFD;
+	--fonte-cor: #141414;
+
+}
+
+body {
+	background-color: var(--cor-principal-fundo);
+    	font-family: var(--fonte-principal);
+
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+.hero {
+	width: 100%;
+	min-height: 420px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+    padding: 70px 80px;
+}
+
+
+.hero-tag {
+	display: flex;
+	align-items: center;
+	gap: 12px;
+	margin-bottom: 24px;
+}
+
+.hero-tag img {
+	width: 50px;
+	height: 50px;
+}
+
+.hero-tag h4 {
+	color: var(--fonte-terciaria);
+	font-weight: 600;
+}
+
+.hero-content h1 {
+	color: var(--fonte-primaria);
+	margin-bottom: 20px;
+	font-weight: 700;
+	font-size: 40px;
+}
+
+.hero-content p {
+	font-size: 20px;
+	color: var(--fonte-primaria);
+	line-height: 1.5;
+	width: 588px;
+	/* height: 84px; */
+}
+
+.hero-image {
+	display: flex;
+	justify-content: flex-end;
+	align-items: center;
+}
+
+.hero-image img {
+	width: 600px;
+	max-width: 100%;
+}
+
+/* ================= CASES ================= */
+
+.cards-case {
+	width: 100%;
+	padding: 80px 7%;
+}
+
+.titulo-cases {
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+	margin-bottom: 40px;
+}
+
+.titulo-cases h2 {
+	font-size: 40px;
+	font-weight: 700;
+	color: var(--fonte-cor);
+	margin-bottom: 10px;
+}
+
+.titulo-cases p {
+	font-size: 20px;
+	color: var(--fonte-primaria);
+}
+
+.ver-mais {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	padding: 14px 22px;
+	border: 1px solid var(--fonte-terciaria);
+	border-radius: 12px;
+	color: var(--fonte-terciaria);
+	text-decoration: none;
+	font-weight: 600;
+}
+
+
+
+.cards {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 24px;
+	margin-top: 32px;
+   
+}
+
+.card {
+	border: 1px solid #D9DEE5;
+	border-radius: 24px;
+	overflow: hidden;
+	background: var(--cor-principal-fundo);
+	display: flex;
+	flex-direction: column;
+    flex: 1 1 280px; 
+	max-width: 372px; 
+    
+}
+
+.card-img {
+	width: 100%;
+	height: 201px;
+	object-fit: cover;
+	display: block;
+}
+
+.card-conteudo {
+	padding: 24px;
+}
+
+.logo {
+	width: 170px;
+	height: auto;
+	display: block;
+	margin-bottom: 18px;
+}
+
+.tags ul {
+	display: flex;
+	flex-wrap: wrap;
+	gap: 8px;
+	padding: 0;
+	margin: 0 0 20px;
+}
+
+.tags li {
+	list-style: none;
+}
+
+.tags li span {
+	display: inline-block;
+	background: var(--fonte-quartenaria);
+	color: var(--fonte-terciaria);
+	font-size: 12px;
+	font-weight: 600;
+	padding: 4px 8px;
+	border-radius: 4px;
+}
+
+.card p {
+	width: 335px;
+	font-size: 20px;
+	font-weight: 700;
+	line-height: 120%;
+	letter-spacing: -0.8px;
+	color: var(--fonte-cor);
+}
+
+
+@media (max-width: 992px) {
+
+    .hero {
+        flex-direction: column;
+        text-align: center;
+        gap: 50px;
+        padding: 60px 5%;
+    }
+
+    .hero-content {
+        max-width: 100%;
+    }
+
+    .hero-tag {
+        justify-content: center;
+    }
+
+    .hero-content h1 {
+        font-size: 34px;
+        white-space: normal;
+    }
+
+    .hero-content p {
+        width: 100%;
+        height: auto;
+    }
+
+    .hero-image img {
+        width: 420px;
+    }
+
+    .titulo-cases {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .cards {
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .card {
+        width: 340px;
+    }
+}
+
+
+@media (max-width: 768px) {
+
+    .hero {
+        padding: 50px 20px;
+    }
+
+    .hero-content h1 {
+        font-size: 30px;
+    }
+
+    .hero-content p {
+        font-size: 18px;
+        width: 100%;
+    }
+
+    .hero-image img {
+        width: 100%;
+        max-width: 350px;
+    }
+
+    .cards-case {
+        padding: 60px 20px;
+    }
+
+    .titulo-cases h2 {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .titulo-cases p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .ver-mais {
+        width: fit-content;
+        margin: 0 auto;
+    }
+
+    .cards {
+        flex-direction: column;
+        align-items: center;
+        gap: 24px;
+    }
+
+    .card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .card-img {
+        height: auto;
+    }
+
+    .logo {
+        width: 150px;
+    }
+
+    .card p {
+        font-size: 18px;
+    }
+}
+
+
