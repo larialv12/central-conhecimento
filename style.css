@@ -226,7 +226,7 @@ body {
 
     .card {
         width: 340px;
-		flex:auto;
+		flex:none;
     }
 }
 
@@ -279,6 +279,8 @@ body {
     .card {
         width: 100%;
         max-width: 400px;
+				flex:none;
+
     }
 
     .card-img {
